@@ -1,0 +1,3 @@
+/* Paths */
+
+require("./test/paths");

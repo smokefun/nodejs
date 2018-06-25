@@ -1,3 +1,1 @@
-/* Paths */
-
 require("./test/paths");

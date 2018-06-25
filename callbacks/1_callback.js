@@ -1,13 +1,20 @@
 const fs = require("fs");
 const path = require("path");
 
+const tinyFile = path.join(__dirname, "../src/tiny.file");
+if (!fs.existsSync(tinyFile)) {
+  console.log("Missing files! Did you run npm start ?");
+  process.exit(1);
+}
+
 console.log("1");
 
-const bookPath = path.join(__dirname, "../temp/alice.txt");
-
-fs.readFile(bookPath, (err, alice) => {
+fs.readFile(tinyFile, (err, lorem) => {
+  if (err) {
+    return console.error(err);
+  }
   console.log("2");
-  console.log("" + alice.slice(0, 200));
+  console.log(lorem.toString().slice(0, 200)); // by default, data returned is a buffer
 });
 // Usually things that have to talk to hard drives or networks will be asynchronous
 

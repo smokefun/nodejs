@@ -1,1 +1,1 @@
-console.log("Call from child.js");
+console.log("Hello from child.js");

@@ -1,9 +1,12 @@
-const exec = require("child_process").exec;
-const spawn = require("child_process").spawn;
+const { exec, spawn } = require("child_process");
 
-exec("find ~/ -type f | wc -l", (err, stdout, stderr) => {
+const command = "find . -type f | wc -l";
+console.time(command);
+exec(command, (err, stdout, stderr) => {
   if (err) {
     console.error(err);
+    process.exit(1);
   }
-  console.log(`files in home : ${stdout}`);
+  console.log(`files in current process folder : ${stdout}`);
+  console.timeEnd(command);
 });

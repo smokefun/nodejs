@@ -26,8 +26,10 @@
 
 ### Streams
 
-- https://medium.com/@brianjleeofcl/what-they-probably-didnt-teach-you-pt-2-streams-overview-5fda4910b200
+- https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93
 - https://github.com/substack/stream-handbook#introduction
+- https://medium.com/@brianjleeofcl/what-they-probably-didnt-teach-you-pt-2-streams-overview-5fda4910b200
+- http://2ality.com/2018/04/async-iter-nodejs.html
 
 ### Servers & requests
 
